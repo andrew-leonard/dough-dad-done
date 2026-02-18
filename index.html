@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baking Recipes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Baking Recipes</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html" class="contrast">Home</a></li>
+        <li><a href="favorites.html" class="contrast">Favorites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Find Your Perfect Recipe</h1>
+      <input type="search" id="search-input" name="search" placeholder="Search recipes by name, ingredient, or tag...">
+    </section>
+
+    <section>
+      <div class="category-filters" role="group">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="cookies">Cookies</button>
+        <button class="category-btn" data-category="cakes">Cakes</button>
+        <button class="category-btn" data-category="bread">Bread</button>
+        <button class="category-btn" data-category="pastries">Pastries</button>
+        <button class="category-btn" data-category="pies">Pies</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="recipe-grid" class="grid">
+      </div>
+      <div id="no-results" style="display: none; text-align: center; padding: 2rem;">
+        <p>No recipes found matching your search.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Baking Recipes - Made with love for bakers</small>
+  </footer>
+
+  <script src="js/recipes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

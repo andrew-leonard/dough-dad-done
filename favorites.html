@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites - Baking Recipes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Baking Recipes</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html" class="contrast">Home</a></li>
+        <li><a href="favorites.html" class="contrast">Favorites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Favorite Recipes</h1>
+
+    <div id="favorites-grid" class="grid">
+    </div>
+
+    <div id="no-favorites" style="display: none; text-align: center; padding: 2rem;">
+      <p>You haven't saved any favorites yet.</p>
+      <a href="index.html" role="button">Browse Recipes</a>
+    </div>
+  </main>
+
+  <footer class="container">
+    <small>Baking Recipes - Made with love for bakers</small>
+  </footer>
+
+  <script src="js/recipes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFavoritesPage();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+  --primary: #8b4513;
+  --primary-hover: #6b3410;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  border: 1px solid var(--muted-border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card .category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card .meta {
+  color: var(--muted-color);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: var(--muted-color);
+  transition: color 0.2s;
+}
+
+.favorite-btn:hover,
+.favorite-btn.active {
+  color: #e74c3c;
+}
+
+.favorite-btn.active {
+  color: #e74c3c;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  color: var(--muted-color);
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.recipe-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: var(--muted-background-color);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+#recipe-ingredients li,
+#recipe-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+mark {
+  background: #ffd700;
+  padding: 0 0.125rem;
+}
+
+@media print {
+  header,
+  footer,
+  .recipe-actions,
+  .favorite-btn {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  #recipe-detail {
+    border: none;
+    padding: 0;
+  }
+}
