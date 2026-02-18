@@ -4,7 +4,7 @@ A simple, fast, and mobile-friendly baking recipe website hosted on GitHub Pages
 
 ## Live Site
 
-Visit the site at: `https://yourusername.github.io/baking-recipes`
+Visit the site at: `https://andrew-leonard.github.io/baking-recipes`
 
 ## Features
 
