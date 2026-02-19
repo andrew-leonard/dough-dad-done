@@ -1,5 +1,37 @@
 const recipes = [
   {
+    id: 'mini-egg-banana-bread',
+    title: 'Mini Egg Banana Bread',
+    category: 'bread',
+    prepTime: '10 min',
+    cookTime: '60 min',
+    servings: 8,
+    ingredients: [
+      '3 bananas mashed',
+      '150g butter',
+      '150g caster sugar',
+      '2 eggs',
+      '1 tsp vanilla extract',
+      '150g self-raising flour',
+      '1 bag mini eggs (100g)',
+      '75g milk chocolate chips',
+      '75g white chocolate chips'
+    ],
+    instructions: [
+      'Preheat oven to 160°C (320°F).',
+      'Grease and flour a loaf pan.',
+      'In a large bowl, cream together butter and sugar until light and fluffy.',
+      'Beat in eggs one at a time, then stir in vanilla.',
+      'Mix in mashed bananas.',
+      'Sift in flour and fold until just combined.',
+      'Gently fold in mini eggs and chocolate chips.',
+      'Pour batter into prepared loaf pan and smooth the top.',
+      'Bake for 60 minutes or until a toothpick inserted into the center comes out clean.',
+      'Allow to cool in the pan for 10 minutes, then turn out onto a wire rack to cool completely.'
+    ],
+    tags: ['banana', 'chocolate', 'easy', 'mini eggs']
+  },
+  {
     id: "chocolate-chip-cookies",
     title: "Chocolate Chip Cookies",
     category: "cookies",
@@ -51,7 +83,7 @@ const recipes = [
       "Perform stretch and folds every 30 minutes for 2 hours.",
       "Cover and let rise at room temperature for 4-6 hours.",
       "Shape dough and place in a floured banneton.",
-      "Refrigerate overnight (8-24 hours).",
+      "Refrigerate overnight (8-24 hours). Or let rise at room temperature for 2-4 hours until doubled.",
       "Preheat Dutch oven to 450°F (230°C).",
       "Score dough and bake covered for 20 minutes.",
       "Remove lid and bake 20-25 minutes more until golden brown.",
