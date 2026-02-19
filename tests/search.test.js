@@ -45,9 +45,9 @@ describe('searchRecipes', () => {
   });
 
   it('should combine category filter with search query', () => {
-    const results = searchRecipes('chocolate', 'cake');
+    const results = searchRecipes('chocolate', 'cakes');
     assert.ok(results.length > 0);
-    assert.ok(results.every(r => r.category === 'cake'));
+    assert.ok(results.every(r => r.category === 'cakes'));
     assert.ok(results.every(r => 
       r.title.toLowerCase().includes('chocolate') ||
       r.ingredients.some(ing => ing.toLowerCase().includes('chocolate')) ||
