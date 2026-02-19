@@ -1,3 +1,7 @@
+if (typeof require !== 'undefined') {
+  var { getAllRecipes } = require('./recipes.js');
+}
+
 function searchRecipes(query, category = 'all') {
   const recipes = getAllRecipes();
   const searchTerm = query.toLowerCase().trim();
@@ -27,4 +31,8 @@ function highlightMatch(text, query) {
 
 function escapeRegex(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { searchRecipes, highlightMatch, escapeRegex };
 }

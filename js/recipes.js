@@ -70,10 +70,10 @@ const recipes = [
     cookTime: "45 min",
     servings: 1,
     ingredients: [
-      "1 cup active sourdough starter",
-      "1 1/2 cups warm water",
-      "4 cups bread flour",
-      "1 1/2 tsp salt"
+      "240g active sourdough starter",
+      "360ml warm water",
+      "500g bread flour",
+      "9g salt"
     ],
     instructions: [
       "In a large bowl, mix starter and water.",
@@ -90,6 +90,34 @@ const recipes = [
       "Cool completely on wire rack before slicing."
     ],
     tags: ["artisan", "fermentation", "weekend-project"]
+  },
+  {
+    id: "easy-chocolate-cake",
+    title: "Easy Chocolate Cake",
+    category: "cake",
+    prepTime: "15 min",
+    cookTime: "25 min",
+    servings: 8,
+    ingredients: [
+      "175g self-raising flour",
+      "175g caster sugar",
+      "175g unsalted butter, softened",
+      "3 medium eggs",
+      "40g cocoa powder",
+      "1 tsp baking powder",
+      "2-3 tbsp milk"
+    ],
+    instructions: [
+      "Preheat oven to 180°C (160°C fan) / Gas 4.",
+      "Grease and line two 20cm round sandwich tins (or use one deep tin).",
+      "In a large bowl, beat together the butter and sugar until light and fluffy.",
+      "Add the eggs one at a time, mixing well.",
+      "Sift in the flour, cocoa, and baking powder. Gently fold together.",
+      "Stir in the milk until the mixture is smooth and drops easily off the spoon.",
+      "Divide between tins and bake for 20–25 minutes (or 35–40 mins if one deep tin), until a skewer comes out clean.",
+      "Cool in tins for 10 mins, then turn out onto a wire rack to cool completely."
+    ],
+    tags: ["chocolate", "easy", "cakes", "classic"]
   }
 ];
 
@@ -104,4 +132,8 @@ function getRecipeById(id) {
 function getRecipesByCategory(category) {
   if (category === 'all') return recipes;
   return recipes.filter(recipe => recipe.category === category);
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { recipes, getAllRecipes, getRecipeById, getRecipesByCategory };
 }

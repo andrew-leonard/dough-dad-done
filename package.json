@@ -1,0 +1,20 @@
+{
+  "name": "dough-dad-done",
+  "version": "1.0.0",
+  "description": "A simple, fast, and mobile-friendly baking recipe website hosted on GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-leonard/dough-dad-done.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-leonard/dough-dad-done/issues"
+  },
+  "homepage": "https://github.com/andrew-leonard/dough-dad-done#readme"
+}

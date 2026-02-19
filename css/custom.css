@@ -208,6 +208,7 @@ body > footer small {
 #recipe-ingredients li,
 #recipe-instructions li {
   margin-bottom: 0.5rem;
+  color: var(--primary);
 }
 
 mark {
@@ -243,4 +244,9 @@ button {
     border: none;
     padding: 0;
   }
+}
+
+.title-link {
+  color: var(--primary);
+  text-decoration: none;
 }
