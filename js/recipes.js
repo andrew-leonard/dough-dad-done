@@ -120,6 +120,68 @@ const recipes = [
     tags: ["chocolate", "easy", "cakes", "classic"]
   },
   {
+    id: "vanilla-cupcakes",
+    title: "Vanilla Cupcakes",
+    category: "cakes",
+    prepTime: "15 min",
+    cookTime: "15-20 min",
+    servings: 12,
+    ingredients: [
+      "115g unsalted butter, softened",
+      "115g caster sugar",
+      "2 large free-range eggs",
+      "1/2 tsp vanilla extract",
+      "115g self-raising flour, sifted",
+      "1/2 tsp baking powder",
+      "1-2 tbsp unsweetened almond milk (or whole milk)"
+    ],
+    instructions: [
+      "Preheat oven to 180°C (160°C fan) / 350°F / Gas 4.",
+      "Line a 12-hole cupcake tin with cupcake cases.",
+      "Beat the softened butter and caster sugar in a large bowl until pale and fluffy.",
+      "Add eggs one at a time, mixing after each addition. Stir in vanilla extract.",
+      "Fold in sifted flour and baking powder until just combined.",
+      "Stir in almond milk a little at a time until batter drops easily off a spoon.",
+      "Divide batter evenly among the 12 cases, filling each about two-thirds full.",
+      "Bake for 15-20 minutes until golden and springy and a skewer inserted in the center comes out clean.",
+      "Cool in the tin for 5 minutes, then transfer to a wire rack to cool completely."
+    ],
+    tags: ["vanilla", "cupcakes", "easy", "baking"]
+  },
+  {
+    id: "flaxseed-chocolate-chip-muffins",
+    title: "Flaxseed Chocolate Chip Muffins",
+    category: "cakes",
+    prepTime: "10 min",
+    cookTime: "20 min",
+    servings: 12,
+    ingredients: [
+      "200g plain flour (or wholemeal flour)",
+      "60g ground flaxseed",
+      "150g caster sugar (or soft brown sugar)",
+      "2 tsp baking powder",
+      "1/2 tsp bicarbonate of soda",
+      "1/2 tsp salt",
+      "1 tsp cinnamon (optional)",
+      "240ml buttermilk (or milk + 1 tbsp vinegar/lemon juice)",
+      "80ml vegetable oil (or melted coconut oil)",
+      "1 large egg",
+      "1 tsp vanilla extract",
+      "150g chocolate chips"
+    ],
+    instructions: [
+      "Preheat oven to 190°C (170°C fan) / Gas 5. Line a 12-hole muffin tin with paper cases.",
+      "Sift together flour, ground flaxseed, sugar, baking powder, bicarbonate, salt, and cinnamon.",
+      "Whisk buttermilk, oil, egg, and vanilla together until smooth.",
+      "Pour wet ingredients into dry and fold together until just combined.",
+      "Stir in chocolate chips.",
+      "Fill muffin cases about 3/4 full.",
+      "Bake for 18-22 minutes until golden and a skewer inserted in the center comes out clean.",
+      "Cool in tin for 5 minutes, then transfer muffins to a wire rack."
+    ],
+    tags: ["muffins", "chocolate", "flaxseed", "breakfast"]
+  },
+  {
     id: "american-style-pancakes",
     title: "American-Style Pancakes",
     category: "breakfast",
