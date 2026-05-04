@@ -12,7 +12,7 @@ describe('searchRecipes', () => {
 
   it('should search by title (case insensitive)', () => {
     const results = searchRecipes('chocolate');
-    assert.strictEqual(results.length, 3);
+    assert.strictEqual(results.length, 4);
     assert.ok(results.some(r => r.title.includes('Chocolate Chip')));
     assert.ok(results.some(r => r.title.includes('Chocolate Cake')));
     assert.ok(results.some(r => r.title.includes('Mini Egg')));
