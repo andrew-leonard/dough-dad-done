@@ -300,8 +300,8 @@ const recipes = [
     tags: ["breakfast", "pancakes", "crepe", "easy"]
   },
   {
-    id: "sourdough-starter-pancakes-half-batch",
-    title: "Sourdough Starter Pancakes (Half Batch)",
+    id: "sourdough-starter-pancakes",
+    title: "Sourdough Starter Pancakes",
     category: "breakfast",
     prepTime: "15 min",
     cookTime: "10 min",
