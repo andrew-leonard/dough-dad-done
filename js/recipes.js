@@ -298,6 +298,33 @@ const recipes = [
       "Serve with lemon wedges and caster sugar, jam, chocolate spread, or fresh berries."
     ],
     tags: ["breakfast", "pancakes", "crepe", "easy"]
+  },
+  {
+    id: "sourdough-starter-pancakes-half-batch",
+    title: "Sourdough Starter Pancakes (Half Batch)",
+    category: "breakfast",
+    prepTime: "15 min",
+    cookTime: "10 min",
+    servings: 4,
+    ingredients: [
+      "120g active sourdough starter (unfed or discard)",
+      "60g all-purpose flour",
+      "120g milk (or plant-based milk)",
+      "25g egg (about half a large egg, lightly beaten)",
+      "12g sugar",
+      "½ tsp baking soda",
+      "¼ tsp salt",
+      "15g melted butter or oil",
+      "½ tsp vanilla extract (optional)"
+    ],
+    instructions: [
+      "Combine the sourdough starter, milk, and flour. Stir until smooth and let rest for 10-15 minutes.",
+      "After resting, add the egg, sugar, melted butter, and vanilla (if using). Mix well.",
+      "Just before cooking, sprinkle the baking soda and salt over the batter. Fold in gently.",
+      "Heat a skillet over medium heat. Pour about 50g of batter per pancake.",
+      "Cook until bubbles form, then flip and cook until golden."
+    ],
+    tags: ["breakfast", "pancakes", "sourdough", "easy"]
   }
 ];
 
